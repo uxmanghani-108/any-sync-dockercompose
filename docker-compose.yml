@@ -72,7 +72,7 @@ services:
     networks:
       default:
         aliases:
-          - "${MINIO_BUCKET}.minio" # <bucket-name>.<endpoint-name>
+          - "${MINIO_BUCKET}.minio"
     ports:
       - "127.0.0.1:${EXTERNAL_MINIO_WEB_PORT}:${MINIO_WEB_PORT}"
 
